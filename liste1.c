@@ -10,13 +10,24 @@ struct node
     link next;
 };
 
+link newNode(Item val, link next){
+    link x = (link) malloc(sizeof *x);
+    if(x==NULL)
+        return NULL;
+    else{
+        x->val = val;
+        x->next = next;
+    }
+    return x;
+}
+
 int main()
 {
-    for (size_t i = 0; i < count; i++)
-    {
-        /* code */
-    }
-    else return 1;
+
+
+
+
+
 
     return 0;
 }
